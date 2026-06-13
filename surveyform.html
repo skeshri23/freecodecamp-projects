@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Welcome to the survey form of your favorite books to read list!</p>
+    <form id = "survey-form">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="100">
+
+        <!--For the name, email, and number input fields, you should have corresponding label elements in the form, that describe the purpose of each field with the following ids: name-label, email-label, and number-label.-->
+        <label id="name-label" for="name">Name:</label><br>
+        <label id="email-label" for="email">Email:</label><br>
+        <label id="number-label" for="number">Age:</label><br>
+
+        <label for="book-genre">Which book genre do you like the most?</label>
+        
+        <!--add radio buttons for book genre options-->
+        <input type="radio" id="genre1" name="book-genre" value="Romance">
+        <label for="genre1">Romance</label><br>
+        <input type="radio" id="genre2" name="book-genre" value="Mystery">
+        <label for="genre2">Mystery</label><br>
+        <input type="radio" id="genre3" name="book-genre" value="Science Fiction">
+        <label for="genre3">Science Fiction</label><br>   
+        <input type="radio" id="genre4" name="book-genre" value="Fantasy">
+        <label for="genre4">Fantasy</label><br>   
+        <input type="radio" id="genre5" name="book-genre" value="Horror">
+        <label for="genre5">Horror</label><br>       
+
+        <!--Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from.-->
+        <label for="dropdown">Select your favorite book:</label>
+        <select id="dropdown" name="favorite-book">
+            <option value="book1">The Off Campus Series</option>
+            <option value="book2">The ACOTAR Series</option>
+            <option value="book3">The Hunger Games</option>
+        </select>
+
+        <!--Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute.-->
+        <p>Which of the following book formats do you prefer?</p>
+        <input type="checkbox" id="format1" name="book-format" value="Paperback">
+        <label for="format1">Paperback</label><br>
+        <input type="checkbox" id="format2" name="book-format" value="Ebook">
+        <label for="format2">Ebook</label><br>
+        <input type="checkbox" id="format3" name="book-format" value="Audiobook">
+        <label for="format3">Audiobook</label><br>  
+
+        <!--Inside the form element, you should have a textarea for additional comments.-->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <!--Inside the form element, you should have a button with id of submit to submit all the inputs.-->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+
+  </body>
+</html>
